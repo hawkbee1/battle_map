@@ -88,7 +88,7 @@ MapBuild buildMap(MapData map, GameData data) {
 /// armour types exist; bridges and ladders link land to land; floating
 /// islands are reached only by bridges and ladders (MAP-36); no object on
 /// a cell it cannot occupy, that is on water, except bridges, which stand
-/// only on water with land at both ends (decision 217); relics on solid
+/// only on water with land at both ends (MAP-48, decision 217); relics on solid
 /// ground, a floating island's included, from `relics_to_hold` to fewer
 /// than twice as many (RELIC-02, RELIC-17, decisions 216, 218); HQ starting
 /// points on the ground for every team count the map supports (MAP-03,
