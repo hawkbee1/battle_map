@@ -1,0 +1,13 @@
+objects:
+  - {type: tree, cells: [[1, 4]]}
+  - {type: tree, cells: [[2, 5]]}
+  - {type: building, cells: [[8, 2], [9, 2]]}
+  - {type: wall, cells: [[7, 3]], armor_type: structure}
+constructions:
+  - {type: bridge, cells: [[5, 1]]}
+  - {type: road_segment, cells: [[6, 6], [7, 6]]}
+links:
+  - {type: ladder, from: [7, 5], to: [8, 5, sky]}
+  - {type: reinforced_bridge, from: [9, 4], to: [9, 5, sky]}
+islands:
+  - {name: sky, terrain: floating_island_ground, height_m: 60, areas: [[8, 5, 3, 2]]}

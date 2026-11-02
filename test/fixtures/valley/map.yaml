@@ -1,0 +1,9 @@
+version: 1
+name: valley
+cell_size_m: 10
+tile_size: 4
+terrain_index: [grass, river, forest_floor, road, mountain, floating_island_ground]
+teams:
+  2: [[0, 0], [11, 0]]
+  3: [[0, 0], [11, 0], [0, 7]]
+relics: [[0, 3], [3, 0], [11, 3], [6, 7], [3, 7], [9, 6, sky]]
