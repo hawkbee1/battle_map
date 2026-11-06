@@ -44,6 +44,32 @@ final class BuiltMapFiles {
   final Map<String, TileFiles> tiles;
 }
 
+/// {@template source_map_files}
+/// A source map, as authored (stack decision 5): its map file, its
+/// whole-map height and terrain images and its one features file.
+/// {@endtemplate}
+final class SourceMapFiles {
+  /// {@macro source_map_files}
+  const new({
+    required this.mapYaml,
+    required this.heightsPng,
+    required this.terrainPng,
+    required this.objectsYaml,
+  });
+
+  /// `map.yaml`, without the map's size: its images give it.
+  final String mapYaml;
+
+  /// `heights.png`, a 16-bit greyscale image of the whole map.
+  final Uint8List heightsPng;
+
+  /// `terrain.png`, an indexed image of the whole map.
+  final Uint8List terrainPng;
+
+  /// `objects.yaml`, every feature of the map.
+  final String objectsYaml;
+}
+
 /// {@template map_data}
 /// A whole map in memory: its [spec], its size in cells, one height and one
 /// terrain index per cell, row by row, and its [features].
@@ -204,6 +230,19 @@ final class MapData {
 
   /// The objects, constructions, links and islands.
   final MapFeatures features;
+
+  /// This map as a source map, to correct by hand (stack decision 5).
+  SourceMapFiles toSource() => SourceMapFiles(
+    mapYaml: spec.toYaml(),
+    heightsPng: encodeHeights(width, depth, heights),
+    terrainPng: encodeTerrain(
+      width,
+      depth,
+      terrain,
+      colors: spec.terrainIndex.length,
+    ),
+    objectsYaml: features.toYaml(),
+  );
 
   /// The tile a ground column and row fall in, as `<column>_<row>`.
   String tileOf(int x, int y) => '${x ~/ spec.tileSize}_${y ~/ spec.tileSize}';

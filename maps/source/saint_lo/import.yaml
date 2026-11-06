@@ -1,0 +1,60 @@
+# Import file of the map saint_lo (stack decision 5, authoring step 1):
+# Normandy bocage, the Vire valley from south of Isigny-sur-Mer down
+# through Saint-Lô, 10 × 50 km.
+#   dart run battle_map:fetch_map_sources <this file> <downloads>
+#   dart run battle_map:import_map <plan> <this file> <downloads> <source>
+#   dart run battle_map:build_map <plan> <source> <built>
+version: 1
+name: saint_lo
+elevation: ign_rge_alti
+# North-west corner, in Lambert-93 metres (EPSG:2154).
+origin: [397000, 6917000]
+width: 1000
+depth: 5000
+cell_size_m: 10
+tile_size: 256
+terrain_index: [grass, forest_floor, sand, mud, rock, road, town_street, mountain, river, lake]
+ground: grass
+
+# Painted in order, a later rule over an earlier one; land never covers water.
+# An element takes the first rule it passes. Each key of tags must match.
+areas:
+  - {tags: {landuse: forest}, terrain: forest_floor}
+  - {tags: {natural: wood}, terrain: forest_floor}
+  - {tags: {landuse: [residential, commercial, retail, industrial, garages, construction, railway]}, terrain: town_street}
+  - {tags: {natural: [sand, beach]}, terrain: sand}
+  - {tags: {natural: wetland}, terrain: mud}
+  - {tags: {landuse: quarry}, terrain: rock}
+  - {tags: {natural: [bare_rock, scree]}, terrain: rock}
+  - {tags: {natural: water, water: [river, canal, oxbow]}, terrain: river}
+  - {tags: {natural: water}, terrain: lake}
+  - {tags: {landuse: [reservoir, basin]}, terrain: lake}
+
+lines:
+  - {tags: {waterway: [river, canal]}, terrain: river, width_m: 20}
+  - {tags: {natural: cliff}, terrain: mountain, width_m: 10}
+  - {tags: {highway: [motorway, motorway_link, trunk, trunk_link]}, terrain: road, width_m: 20, bridge: reinforced_bridge}
+  - {tags: {highway: [primary, primary_link, secondary, secondary_link]}, terrain: road, width_m: 10, bridge: reinforced_bridge}
+  - {tags: {highway: [tertiary, tertiary_link, unclassified, residential, living_street, pedestrian, road, track]}, terrain: road, width_m: 10, bridge: bridge}
+
+# Placed in order, never on water, on a cell another object holds or on a
+# starting point.
+objects:
+  - {tags: {building: '*'}, type: building, shape: area, not_on: [road]}
+  - {tags: {barrier: [wall, city_wall]}, type: wall, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {natural: tree}, type: tree, shape: point, not_on: [road]}
+  - {tags: {natural: tree_row}, type: tree, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {barrier: hedge}, type: tree, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {landuse: forest}, type: tree, shape: area, each_cell: true}
+  - {tags: {natural: wood}, type: tree, shape: area, each_cell: true}
+
+# Starting points, placed by hand (authoring step 3) on open grass or road:
+# relics and the HQ are pushed, and town streets do not let them through.
+# HQs at the two ends and spread between them; eight relics (MAP-02), two
+# by two at the same distance from the middle row, one in Saint-Lô.
+teams:
+  2: [[499, 149], [500, 4850]]
+  3: [[499, 149], [500, 2500], [500, 4850]]
+  4: [[499, 149], [500, 1700], [500, 3300], [500, 4850]]
+  5: [[499, 149], [500, 1300], [500, 2500], [500, 3700], [500, 4850]]
+relics: [[300, 700], [700, 1250], [475, 1830], [300, 2350], [700, 2650], [297, 3147], [700, 3750], [300, 4300]]

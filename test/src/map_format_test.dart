@@ -42,6 +42,33 @@ void main() {
       expect(built.terrainIndex, spec().terrainIndex);
     });
 
+    test('the attribution its sources require reads and writes back, '
+        'quoted whatever it holds', () {
+      final attributed = MapSpec.parse(
+        '${spec().toYaml()}attribution: ["© OpenStreetMap: ODbL", '
+        "'IGN: \"RGE ALTI®\"']\n",
+      );
+      final again = MapSpec.parse(attributed.toYaml());
+
+      expect(spec().attribution, isEmpty);
+      expect(attributed.attribution, [
+        '© OpenStreetMap: ODbL',
+        'IGN: "RGE ALTI®"',
+      ]);
+      expect(again.attribution, attributed.attribution);
+      expect(
+        MapSpec.parse('${spec().toYaml()}attribution: One line\n').attribution,
+        ['One line'],
+      );
+    });
+
+    test('a source map file leaves out the size: its images give it', () {
+      final source = spec().toYaml();
+
+      expect(source, isNot(contains('width')));
+      expect(MapSpec.parse(source).width, isNull);
+    });
+
     test('a map with no team count or relic writes back too', () {
       const empty = MapSpec(
         name: 'empty',

@@ -25,6 +25,14 @@ real-time team battle game (stack decision 5 of the plan).
   gives the host the navigation model of
   [battle_pathfinding](https://github.com/hawkbee1/battle_pathfinding) and the objects
   with their hit points and armour type; the client will make its meshes.
+- **Maps from real data** (`package:battle_map/map_import.dart`): an import file
+  (`import.yaml`) picks an area in Lambert-93 and rules that turn OpenStreetMap
+  elements into terrain, bridges and objects. `bin/fetch_map_sources.dart` fetches the
+  IGN RGE ALTI heights and the OpenStreetMap elements, `bin/import_map.dart` makes the
+  source map to correct by hand, `bin/preview_map.dart` draws it, and
+  `bin/source_map.dart` turns a built map back into a source map. The maps, their
+  licences (ODbL, Licence Ouverte) and how they were made are in
+  [`maps/`](maps/README.md); the first is `saint_lo`, the Vire valley through Saint-Lô.
 - **Pure Dart, no I/O in `lib/`**: the caller passes bytes and text. Only the tools in
   `bin/` read and write files. The game data comes from
   [battle_rules](https://github.com/hawkbee1/battle_rules).
@@ -45,6 +53,11 @@ cd hawkbee && flutter pub get
 
 The tests read the game data from the plan in that checkout
 (`apps/battle_team/plan/data`).
+
+## Licence
+
+The code is under the MIT licence. The map data in `maps/` is not: it is under the ODbL
+1.0 (OpenStreetMap) and the Licence Ouverte 2.0 (IGN), see [`maps/`](maps/README.md).
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT

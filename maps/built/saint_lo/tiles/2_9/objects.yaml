@@ -1,0 +1,830 @@
+objects:
+  - {type: building, cells: [[751, 2541], [752, 2541]]}
+  - {type: building, cells: [[763, 2543]]}
+  - {type: building, cells: [[732, 2548]]}
+  - {type: building, cells: [[756, 2531]]}
+  - {type: building, cells: [[764, 2546]]}
+  - {type: building, cells: [[764, 2531]]}
+  - {type: building, cells: [[744, 2546]]}
+  - {type: building, cells: [[740, 2522], [741, 2522]]}
+  - {type: building, cells: [[759, 2534], [758, 2535], [759, 2535]]}
+  - {type: building, cells: [[749, 2552]]}
+  - {type: building, cells: [[766, 2516]]}
+  - {type: building, cells: [[753, 2548]]}
+  - {type: building, cells: [[766, 2535], [767, 2535]]}
+  - {type: building, cells: [[751, 2533]]}
+  - {type: building, cells: [[751, 2519], [751, 2520], [752, 2520], [753, 2521]]}
+  - {type: building, cells: [[762, 2526]]}
+  - {type: building, cells: [[767, 2559], [767, 2560]]}
+  - {type: building, cells: [[742, 2536], [742, 2537]]}
+  - {type: building, cells: [[756, 2536], [757, 2536]]}
+  - {type: building, cells: [[755, 2538]]}
+  - {type: building, cells: [[750, 2543], [751, 2544]]}
+  - {type: building, cells: [[746, 2554], [747, 2555], [748, 2555], [749, 2556], [750, 2556], [751, 2557]]}
+  - {type: building, cells: [[744, 2537], [745, 2537]]}
+  - {type: building, cells: [[748, 2524], [749, 2524], [750, 2524], [752, 2524], [753, 2524], [749, 2525], [750, 2525], [751, 2525], [752, 2525], [753, 2525], [754, 2525], [750, 2526], [751, 2526], [752, 2526]]}
+  - {type: building, cells: [[756, 2514], [756, 2515], [757, 2515], [755, 2516], [756, 2516], [757, 2516], [757, 2517]]}
+  - {type: building, cells: [[758, 2527], [759, 2528]]}
+  - {type: building, cells: [[735, 2533]]}
+  - {type: building, cells: [[763, 2512], [764, 2512]]}
+  - {type: building, cells: [[723, 2543]]}
+  - {type: building, cells: [[731, 2552]]}
+  - {type: building, cells: [[729, 2545]]}
+  - {type: building, cells: [[752, 2532]]}
+  - {type: building, cells: [[736, 2544]]}
+  - {type: building, cells: [[767, 2539]]}
+  - {type: building, cells: [[748, 2520]]}
+  - {type: building, cells: [[741, 2555]]}
+  - {type: building, cells: [[761, 2514]]}
+  - {type: building, cells: [[753, 2530]]}
+  - {type: building, cells: [[767, 2537]]}
+  - {type: building, cells: [[737, 2550]]}
+  - {type: building, cells: [[760, 2512], [760, 2513]]}
+  - {type: building, cells: [[731, 2545]]}
+  - {type: building, cells: [[739, 2520]]}
+  - {type: building, cells: [[749, 2539]]}
+  - {type: building, cells: [[751, 2524]]}
+  - {type: building, cells: [[754, 2558]]}
+  - {type: building, cells: [[731, 2530]]}
+  - {type: building, cells: [[750, 2528]]}
+  - {type: building, cells: [[740, 2548]]}
+  - {type: building, cells: [[733, 2523]]}
+  - {type: building, cells: [[735, 2554]]}
+  - {type: building, cells: [[754, 2532]]}
+  - {type: building, cells: [[762, 2516]]}
+  - {type: building, cells: [[730, 2543]]}
+  - {type: building, cells: [[764, 2559]]}
+  - {type: building, cells: [[729, 2529]]}
+  - {type: building, cells: [[741, 2553]]}
+  - {type: building, cells: [[750, 2555]]}
+  - {type: building, cells: [[766, 2540]]}
+  - {type: building, cells: [[735, 2531]]}
+  - {type: building, cells: [[755, 2526]]}
+  - {type: building, cells: [[719, 2548]]}
+  - {type: building, cells: [[761, 2515]]}
+  - {type: building, cells: [[745, 2558], [746, 2559], [747, 2559], [748, 2560], [749, 2560]]}
+  - {type: building, cells: [[752, 2556]]}
+  - {type: building, cells: [[732, 2529]]}
+  - {type: building, cells: [[746, 2552]]}
+  - {type: building, cells: [[756, 2524]]}
+  - {type: building, cells: [[756, 2538]]}
+  - {type: building, cells: [[734, 2543]]}
+  - {type: building, cells: [[740, 2535]]}
+  - {type: building, cells: [[765, 2511]]}
+  - {type: building, cells: [[730, 2544]]}
+  - {type: building, cells: [[764, 2541]]}
+  - {type: building, cells: [[733, 2530]]}
+  - {type: building, cells: [[755, 2550]]}
+  - {type: building, cells: [[745, 2522]]}
+  - {type: building, cells: [[732, 2552]]}
+  - {type: building, cells: [[734, 2544]]}
+  - {type: building, cells: [[749, 2527]]}
+  - {type: building, cells: [[723, 2540]]}
+  - {type: building, cells: [[758, 2506]]}
+  - {type: building, cells: [[732, 2544]]}
+  - {type: building, cells: [[730, 2551]]}
+  - {type: building, cells: [[760, 2536]]}
+  - {type: building, cells: [[762, 2558]]}
+  - {type: building, cells: [[750, 2546]]}
+  - {type: building, cells: [[734, 2545]]}
+  - {type: building, cells: [[745, 2543]]}
+  - {type: building, cells: [[761, 2536]]}
+  - {type: building, cells: [[746, 2527]]}
+  - {type: building, cells: [[765, 2547]]}
+  - {type: building, cells: [[760, 2535]]}
+  - {type: building, cells: [[753, 2540]]}
+  - {type: building, cells: [[763, 2520]]}
+  - {type: building, cells: [[737, 2555]]}
+  - {type: building, cells: [[743, 2555]]}
+  - {type: building, cells: [[746, 2533]]}
+  - {type: building, cells: [[721, 2544]]}
+  - {type: building, cells: [[753, 2554]]}
+  - {type: building, cells: [[733, 2549]]}
+  - {type: building, cells: [[765, 2542]]}
+  - {type: building, cells: [[767, 2556]]}
+  - {type: building, cells: [[728, 2549]]}
+  - {type: building, cells: [[764, 2522], [765, 2522]]}
+  - {type: building, cells: [[766, 2526], [766, 2527]]}
+  - {type: building, cells: [[748, 2539]]}
+  - {type: building, cells: [[718, 2548]]}
+  - {type: building, cells: [[742, 2523]]}
+  - {type: building, cells: [[737, 2527], [738, 2527]]}
+  - {type: building, cells: [[764, 2556], [765, 2556]]}
+  - {type: building, cells: [[733, 2553], [734, 2553]]}
+  - {type: building, cells: [[736, 2546]]}
+  - {type: building, cells: [[738, 2520]]}
+  - {type: building, cells: [[767, 2546]]}
+  - {type: building, cells: [[740, 2528], [740, 2529]]}
+  - {type: building, cells: [[760, 2558]]}
+  - {type: building, cells: [[757, 2552]]}
+  - {type: building, cells: [[738, 2547]]}
+  - {type: building, cells: [[762, 2518]]}
+  - {type: building, cells: [[751, 2553]]}
+  - {type: building, cells: [[747, 2554]]}
+  - {type: building, cells: [[757, 2529]]}
+  - {type: building, cells: [[758, 2557]]}
+  - {type: building, cells: [[742, 2529]]}
+  - {type: building, cells: [[760, 2533]]}
+  - {type: building, cells: [[735, 2526]]}
+  - {type: building, cells: [[730, 2526]]}
+  - {type: building, cells: [[736, 2519]]}
+  - {type: building, cells: [[763, 2544], [763, 2545]]}
+  - {type: building, cells: [[738, 2552], [739, 2552]]}
+  - {type: building, cells: [[767, 2541]]}
+  - {type: building, cells: [[762, 2555]]}
+  - {type: building, cells: [[756, 2555]]}
+  - {type: building, cells: [[732, 2528]]}
+  - {type: building, cells: [[746, 2522], [746, 2523], [747, 2523], [748, 2523], [747, 2524]]}
+  - {type: building, cells: [[744, 2524], [744, 2525]]}
+  - {type: building, cells: [[760, 2524]]}
+  - {type: building, cells: [[729, 2544]]}
+  - {type: building, cells: [[722, 2544]]}
+  - {type: building, cells: [[748, 2528]]}
+  - {type: building, cells: [[745, 2532]]}
+  - {type: building, cells: [[743, 2553]]}
+  - {type: building, cells: [[743, 2549]]}
+  - {type: building, cells: [[759, 2554], [760, 2554]]}
+  - {type: building, cells: [[739, 2533], [739, 2534]]}
+  - {type: building, cells: [[763, 2530]]}
+  - {type: building, cells: [[742, 2557], [743, 2557]]}
+  - {type: building, cells: [[746, 2541]]}
+  - {type: building, cells: [[750, 2530]]}
+  - {type: building, cells: [[758, 2520], [759, 2520], [758, 2521], [757, 2522], [758, 2522], [756, 2523], [757, 2523]]}
+  - {type: building, cells: [[725, 2544], [726, 2544]]}
+  - {type: building, cells: [[737, 2532], [737, 2533]]}
+  - {type: building, cells: [[767, 2471], [766, 2472], [767, 2472], [766, 2473]]}
+  - {type: building, cells: [[661, 2517]]}
+  - {type: building, cells: [[663, 2519], [664, 2520]]}
+  - {type: building, cells: [[660, 2520]]}
+  - {type: building, cells: [[759, 2495], [760, 2495]]}
+  - {type: building, cells: [[765, 2473], [764, 2474], [765, 2474], [763, 2475], [764, 2475]]}
+  - {type: building, cells: [[758, 2494]]}
+  - {type: building, cells: [[759, 2491]]}
+  - {type: building, cells: [[767, 2470], [766, 2471], [765, 2472], [764, 2473], [763, 2474]]}
+  - {type: building, cells: [[760, 2467]]}
+  - {type: building, cells: [[610, 2502]]}
+  - {type: building, cells: [[620, 2525]]}
+  - {type: building, cells: [[620, 2505]]}
+  - {type: building, cells: [[622, 2507], [621, 2508]]}
+  - {type: building, cells: [[766, 2555]]}
+  - {type: building, cells: [[767, 2555]]}
+  - {type: building, cells: [[570, 2394]]}
+  - {type: building, cells: [[576, 2409]]}
+  - {type: building, cells: [[533, 2422]]}
+  - {type: building, cells: [[574, 2407]]}
+  - {type: building, cells: [[517, 2440], [518, 2440]]}
+  - {type: building, cells: [[566, 2406], [567, 2407], [567, 2408], [568, 2408]]}
+  - {type: building, cells: [[566, 2384], [567, 2384], [568, 2384]]}
+  - {type: building, cells: [[589, 2466], [587, 2467], [588, 2467], [589, 2467], [590, 2467], [587, 2468], [588, 2468], [589, 2468], [586, 2469], [587, 2469], [588, 2469], [585, 2470], [586, 2470], [584, 2471], [585, 2471], [583, 2472], [584, 2472], [581, 2473], [582, 2473], [583, 2473], [581, 2474], [582, 2474]]}
+  - {type: building, cells: [[579, 2411]]}
+  - {type: building, cells: [[564, 2371]]}
+  - {type: building, cells: [[545, 2420], [546, 2421]]}
+  - {type: building, cells: [[542, 2433]]}
+  - {type: building, cells: [[545, 2408]]}
+  - {type: building, cells: [[513, 2542]]}
+  - {type: building, cells: [[588, 2461]]}
+  - {type: building, cells: [[580, 2409]]}
+  - {type: building, cells: [[532, 2468]]}
+  - {type: building, cells: [[548, 2371]]}
+  - {type: building, cells: [[543, 2422], [544, 2423]]}
+  - {type: building, cells: [[570, 2392]]}
+  - {type: building, cells: [[536, 2409]]}
+  - {type: building, cells: [[567, 2370]]}
+  - {type: building, cells: [[546, 2373]]}
+  - {type: building, cells: [[535, 2422]]}
+  - {type: building, cells: [[513, 2512]]}
+  - {type: building, cells: [[540, 2402]]}
+  - {type: building, cells: [[553, 2547]]}
+  - {type: building, cells: [[567, 2409]]}
+  - {type: building, cells: [[582, 2409]]}
+  - {type: building, cells: [[526, 2418]]}
+  - {type: building, cells: [[515, 2353]]}
+  - {type: building, cells: [[512, 2366]]}
+  - {type: building, cells: [[558, 2377]]}
+  - {type: building, cells: [[528, 2430]]}
+  - {type: building, cells: [[580, 2391]]}
+  - {type: building, cells: [[552, 2380], [552, 2381]]}
+  - {type: building, cells: [[546, 2374]]}
+  - {type: building, cells: [[542, 2434]]}
+  - {type: building, cells: [[579, 2390]]}
+  - {type: building, cells: [[544, 2404]]}
+  - {type: building, cells: [[560, 2552]]}
+  - {type: building, cells: [[518, 2485]]}
+  - {type: building, cells: [[546, 2419], [547, 2420]]}
+  - {type: building, cells: [[542, 2400]]}
+  - {type: building, cells: [[550, 2552]]}
+  - {type: building, cells: [[515, 2445]]}
+  - {type: building, cells: [[565, 2407]]}
+  - {type: building, cells: [[535, 2408]]}
+  - {type: building, cells: [[565, 2504]]}
+  - {type: building, cells: [[531, 2422]]}
+  - {type: building, cells: [[512, 2538]]}
+  - {type: building, cells: [[576, 2399], [576, 2400]]}
+  - {type: building, cells: [[540, 2406]]}
+  - {type: building, cells: [[547, 2373]]}
+  - {type: building, cells: [[543, 2430]]}
+  - {type: building, cells: [[574, 2388]]}
+  - {type: building, cells: [[561, 2381]]}
+  - {type: building, cells: [[567, 2405], [568, 2405]]}
+  - {type: building, cells: [[576, 2373]]}
+  - {type: building, cells: [[527, 2418]]}
+  - {type: building, cells: [[555, 2377]]}
+  - {type: building, cells: [[567, 2390]]}
+  - {type: building, cells: [[544, 2402]]}
+  - {type: building, cells: [[554, 2380]]}
+  - {type: building, cells: [[530, 2463]]}
+  - {type: building, cells: [[565, 2402]]}
+  - {type: building, cells: [[521, 2490]]}
+  - {type: building, cells: [[519, 2487]]}
+  - {type: building, cells: [[581, 2410]]}
+  - {type: building, cells: [[518, 2434]]}
+  - {type: building, cells: [[559, 2388]]}
+  - {type: building, cells: [[556, 2378]]}
+  - {type: building, cells: [[529, 2432]]}
+  - {type: building, cells: [[564, 2392]]}
+  - {type: building, cells: [[541, 2399]]}
+  - {type: building, cells: [[546, 2542]]}
+  - {type: building, cells: [[553, 2554]]}
+  - {type: building, cells: [[576, 2407]]}
+  - {type: building, cells: [[532, 2397]]}
+  - {type: building, cells: [[549, 2550]]}
+  - {type: building, cells: [[582, 2467], [583, 2467]]}
+  - {type: building, cells: [[576, 2412]]}
+  - {type: building, cells: [[548, 2417], [549, 2418]]}
+  - {type: building, cells: [[549, 2371]]}
+  - {type: building, cells: [[561, 2380]]}
+  - {type: building, cells: [[564, 2400]]}
+  - {type: building, cells: [[529, 2464]]}
+  - {type: building, cells: [[514, 2490]]}
+  - {type: building, cells: [[535, 2410]]}
+  - {type: building, cells: [[520, 2491]]}
+  - {type: building, cells: [[577, 2514]]}
+  - {type: building, cells: [[566, 2373]]}
+  - {type: building, cells: [[516, 2434]]}
+  - {type: building, cells: [[525, 2428], [526, 2430]]}
+  - {type: building, cells: [[581, 2397]]}
+  - {type: building, cells: [[534, 2409]]}
+  - {type: building, cells: [[563, 2377]]}
+  - {type: building, cells: [[526, 2427]]}
+  - {type: building, cells: [[554, 2381]]}
+  - {type: building, cells: [[547, 2398]]}
+  - {type: building, cells: [[539, 2401]]}
+  - {type: building, cells: [[584, 2464]]}
+  - {type: building, cells: [[577, 2412]]}
+  - {type: building, cells: [[529, 2417]]}
+  - {type: building, cells: [[562, 2506], [562, 2507]]}
+  - {type: building, cells: [[584, 2412]]}
+  - {type: building, cells: [[538, 2402]]}
+  - {type: building, cells: [[581, 2462], [582, 2464]]}
+  - {type: building, cells: [[583, 2411]]}
+  - {type: building, cells: [[554, 2549]]}
+  - {type: building, cells: [[520, 2490]]}
+  - {type: building, cells: [[526, 2419]]}
+  - {type: building, cells: [[555, 2549]]}
+  - {type: building, cells: [[540, 2403]]}
+  - {type: building, cells: [[515, 2435]]}
+  - {type: building, cells: [[538, 2459], [539, 2459]]}
+  - {type: building, cells: [[566, 2369]]}
+  - {type: building, cells: [[584, 2465], [585, 2465]]}
+  - {type: building, cells: [[566, 2505], [566, 2506]]}
+  - {type: building, cells: [[574, 2372]]}
+  - {type: building, cells: [[516, 2430]]}
+  - {type: building, cells: [[578, 2389], [578, 2390]]}
+  - {type: building, cells: [[515, 2487]]}
+  - {type: building, cells: [[578, 2513], [578, 2514]]}
+  - {type: building, cells: [[559, 2378]]}
+  - {type: building, cells: [[558, 2386]]}
+  - {type: building, cells: [[515, 2442], [516, 2442]]}
+  - {type: building, cells: [[576, 2387], [575, 2388], [574, 2389]]}
+  - {type: building, cells: [[557, 2379]]}
+  - {type: building, cells: [[582, 2399]]}
+  - {type: building, cells: [[582, 2460]]}
+  - {type: building, cells: [[573, 2405]]}
+  - {type: building, cells: [[536, 2412]]}
+  - {type: building, cells: [[527, 2417]]}
+  - {type: building, cells: [[569, 2389]]}
+  - {type: building, cells: [[544, 2458]]}
+  - {type: building, cells: [[578, 2460]]}
+  - {type: building, cells: [[527, 2420], [528, 2420]]}
+  - {type: building, cells: [[543, 2402], [544, 2403]]}
+  - {type: building, cells: [[554, 2379]]}
+  - {type: building, cells: [[579, 2461]]}
+  - {type: building, cells: [[542, 2404]]}
+  - {type: building, cells: [[588, 2462]]}
+  - {type: building, cells: [[515, 2489], [516, 2489]]}
+  - {type: building, cells: [[530, 2418]]}
+  - {type: building, cells: [[531, 2461], [531, 2462]]}
+  - {type: building, cells: [[664, 2548]]}
+  - {type: building, cells: [[584, 2407]]}
+  - {type: building, cells: [[560, 2378]]}
+  - {type: building, cells: [[586, 2459], [586, 2460]]}
+  - {type: building, cells: [[580, 2505]]}
+  - {type: building, cells: [[580, 2508], [581, 2509]]}
+  - {type: building, cells: [[578, 2388]]}
+  - {type: building, cells: [[572, 2403]]}
+  - {type: building, cells: [[551, 2552], [551, 2553], [552, 2554], [553, 2555]]}
+  - {type: building, cells: [[555, 2378]]}
+  - {type: building, cells: [[533, 2459]]}
+  - {type: building, cells: [[541, 2401]]}
+  - {type: building, cells: [[541, 2406]]}
+  - {type: building, cells: [[585, 2464]]}
+  - {type: building, cells: [[582, 2411]]}
+  - {type: building, cells: [[625, 2368], [624, 2369]]}
+  - {type: building, cells: [[627, 2321], [628, 2321]]}
+  - {type: building, cells: [[731, 2420], [730, 2421], [731, 2421]]}
+  - {type: building, cells: [[638, 2389]]}
+  - {type: building, cells: [[644, 2463]]}
+  - {type: building, cells: [[761, 2390], [760, 2391], [761, 2391]]}
+  - {type: building, cells: [[703, 2414]]}
+  - {type: building, cells: [[698, 2411]]}
+  - {type: building, cells: [[689, 2423]]}
+  - {type: building, cells: [[702, 2410]]}
+  - {type: building, cells: [[697, 2366], [696, 2367], [697, 2367], [695, 2368]]}
+  - {type: building, cells: [[676, 2331]]}
+  - {type: building, cells: [[653, 2375], [652, 2376], [654, 2376]]}
+  - {type: building, cells: [[722, 2436]]}
+  - {type: building, cells: [[636, 2393]]}
+  - {type: building, cells: [[638, 2409]]}
+  - {type: building, cells: [[640, 2387]]}
+  - {type: building, cells: [[733, 2410], [734, 2410]]}
+  - {type: building, cells: [[645, 2473]]}
+  - {type: building, cells: [[610, 2363]]}
+  - {type: building, cells: [[646, 2467]]}
+  - {type: building, cells: [[760, 2394], [761, 2395]]}
+  - {type: building, cells: [[700, 2305], [700, 2306]]}
+  - {type: building, cells: [[728, 2423], [729, 2423]]}
+  - {type: building, cells: [[632, 2434]]}
+  - {type: building, cells: [[676, 2333], [675, 2334], [674, 2335]]}
+  - {type: building, cells: [[656, 2458]]}
+  - {type: building, cells: [[731, 2435], [731, 2436]]}
+  - {type: building, cells: [[724, 2416], [724, 2417]]}
+  - {type: building, cells: [[757, 2382], [758, 2382]]}
+  - {type: building, cells: [[694, 2436]]}
+  - {type: building, cells: [[634, 2471]]}
+  - {type: building, cells: [[735, 2404]]}
+  - {type: building, cells: [[719, 2428]]}
+  - {type: building, cells: [[742, 2428], [742, 2429]]}
+  - {type: building, cells: [[744, 2423], [745, 2423]]}
+  - {type: building, cells: [[725, 2441]]}
+  - {type: building, cells: [[667, 2449], [666, 2450]]}
+  - {type: building, cells: [[630, 2383]]}
+  - {type: building, cells: [[651, 2473]]}
+  - {type: building, cells: [[632, 2391]]}
+  - {type: building, cells: [[597, 2343], [598, 2343], [597, 2344], [598, 2344], [599, 2345]]}
+  - {type: building, cells: [[755, 2380], [756, 2380]]}
+  - {type: building, cells: [[660, 2461]]}
+  - {type: building, cells: [[636, 2377], [637, 2377]]}
+  - {type: building, cells: [[721, 2341], [722, 2341], [723, 2341]]}
+  - {type: building, cells: [[656, 2485], [654, 2486], [655, 2486]]}
+  - {type: building, cells: [[599, 2343]]}
+  - {type: building, cells: [[645, 2456]]}
+  - {type: building, cells: [[630, 2319]]}
+  - {type: building, cells: [[663, 2483], [661, 2484], [662, 2484], [663, 2484], [661, 2485], [662, 2485], [663, 2485]]}
+  - {type: building, cells: [[743, 2425], [743, 2426]]}
+  - {type: building, cells: [[648, 2479]]}
+  - {type: building, cells: [[635, 2391]]}
+  - {type: building, cells: [[715, 2428]]}
+  - {type: building, cells: [[601, 2311], [602, 2311], [599, 2312], [600, 2312]]}
+  - {type: building, cells: [[637, 2306]]}
+  - {type: building, cells: [[759, 2318]]}
+  - {type: building, cells: [[638, 2459]]}
+  - {type: building, cells: [[743, 2417]]}
+  - {type: building, cells: [[727, 2437], [728, 2437]]}
+  - {type: building, cells: [[657, 2467]]}
+  - {type: building, cells: [[696, 2424], [696, 2425]]}
+  - {type: building, cells: [[628, 2328], [629, 2328], [630, 2328]]}
+  - {type: building, cells: [[640, 2378], [640, 2379]]}
+  - {type: building, cells: [[719, 2414]]}
+  - {type: building, cells: [[627, 2329], [626, 2330], [626, 2331]]}
+  - {type: building, cells: [[632, 2444]]}
+  - {type: building, cells: [[723, 2411]]}
+  - {type: building, cells: [[649, 2479]]}
+  - {type: building, cells: [[757, 2315]]}
+  - {type: building, cells: [[734, 2401], [734, 2402]]}
+  - {type: building, cells: [[661, 2376]]}
+  - {type: building, cells: [[740, 2460]]}
+  - {type: building, cells: [[644, 2383]]}
+  - {type: building, cells: [[639, 2475]]}
+  - {type: building, cells: [[654, 2488]]}
+  - {type: building, cells: [[660, 2485], [660, 2486], [658, 2487]]}
+  - {type: building, cells: [[657, 2484]]}
+  - {type: building, cells: [[631, 2386]]}
+  - {type: building, cells: [[727, 2343], [728, 2343], [725, 2344]]}
+  - {type: building, cells: [[652, 2464]]}
+  - {type: building, cells: [[659, 2481], [659, 2482]]}
+  - {type: building, cells: [[656, 2497], [657, 2498], [659, 2500], [659, 2501]]}
+  - {type: building, cells: [[695, 2414], [695, 2415]]}
+  - {type: building, cells: [[637, 2473], [637, 2474]]}
+  - {type: building, cells: [[623, 2323], [624, 2323]]}
+  - {type: building, cells: [[732, 2417], [732, 2418]]}
+  - {type: building, cells: [[634, 2384], [635, 2384]]}
+  - {type: building, cells: [[645, 2475], [646, 2476], [645, 2477], [646, 2477]]}
+  - {type: building, cells: [[657, 2493], [658, 2493], [656, 2494], [659, 2494], [660, 2495], [661, 2496]]}
+  - {type: building, cells: [[634, 2412]]}
+  - {type: building, cells: [[736, 2465]]}
+  - {type: building, cells: [[653, 2453]]}
+  - {type: building, cells: [[715, 2430]]}
+  - {type: building, cells: [[639, 2390]]}
+  - {type: building, cells: [[709, 2411]]}
+  - {type: building, cells: [[630, 2378]]}
+  - {type: building, cells: [[694, 2420], [695, 2420]]}
+  - {type: building, cells: [[635, 2461]]}
+  - {type: building, cells: [[646, 2394]]}
+  - {type: building, cells: [[631, 2311]]}
+  - {type: building, cells: [[686, 2424]]}
+  - {type: building, cells: [[632, 2401]]}
+  - {type: building, cells: [[695, 2437]]}
+  - {type: building, cells: [[655, 2455], [655, 2456]]}
+  - {type: building, cells: [[624, 2319]]}
+  - {type: building, cells: [[663, 2486], [663, 2487], [664, 2487], [664, 2488]]}
+  - {type: building, cells: [[764, 2398], [765, 2398]]}
+  - {type: building, cells: [[631, 2384]]}
+  - {type: building, cells: [[742, 2423]]}
+  - {type: building, cells: [[766, 2394]]}
+  - {type: building, cells: [[658, 2454]]}
+  - {type: building, cells: [[704, 2309]]}
+  - {type: building, cells: [[645, 2382]]}
+  - {type: building, cells: [[725, 2436]]}
+  - {type: building, cells: [[615, 2361]]}
+  - {type: building, cells: [[638, 2319]]}
+  - {type: building, cells: [[698, 2455]]}
+  - {type: building, cells: [[670, 2333]]}
+  - {type: building, cells: [[733, 2418]]}
+  - {type: building, cells: [[648, 2460]]}
+  - {type: building, cells: [[740, 2431]]}
+  - {type: building, cells: [[726, 2410]]}
+  - {type: building, cells: [[756, 2404]]}
+  - {type: building, cells: [[723, 2417]]}
+  - {type: building, cells: [[632, 2374]]}
+  - {type: building, cells: [[649, 2492]]}
+  - {type: building, cells: [[711, 2415]]}
+  - {type: building, cells: [[729, 2342]]}
+  - {type: building, cells: [[628, 2383]]}
+  - {type: building, cells: [[691, 2421]]}
+  - {type: building, cells: [[636, 2463]]}
+  - {type: building, cells: [[701, 2410]]}
+  - {type: building, cells: [[724, 2439]]}
+  - {type: building, cells: [[636, 2307]]}
+  - {type: building, cells: [[705, 2455]]}
+  - {type: building, cells: [[685, 2422]]}
+  - {type: building, cells: [[729, 2426]]}
+  - {type: building, cells: [[633, 2435]]}
+  - {type: building, cells: [[723, 2410]]}
+  - {type: building, cells: [[720, 2432]]}
+  - {type: building, cells: [[614, 2357]]}
+  - {type: building, cells: [[635, 2408]]}
+  - {type: building, cells: [[639, 2316]]}
+  - {type: building, cells: [[692, 2372]]}
+  - {type: building, cells: [[727, 2432]]}
+  - {type: building, cells: [[696, 2417]]}
+  - {type: building, cells: [[639, 2479]]}
+  - {type: building, cells: [[660, 2451]]}
+  - {type: building, cells: [[636, 2462]]}
+  - {type: building, cells: [[698, 2366]]}
+  - {type: building, cells: [[634, 2320]]}
+  - {type: building, cells: [[691, 2465]]}
+  - {type: building, cells: [[701, 2457]]}
+  - {type: building, cells: [[641, 2394]]}
+  - {type: building, cells: [[654, 2377]]}
+  - {type: building, cells: [[715, 2427]]}
+  - {type: building, cells: [[654, 2497]]}
+  - {type: building, cells: [[731, 2409]]}
+  - {type: building, cells: [[600, 2307]]}
+  - {type: building, cells: [[626, 2362]]}
+  - {type: building, cells: [[736, 2458], [737, 2459]]}
+  - {type: building, cells: [[642, 2479], [643, 2481], [643, 2482], [643, 2483], [643, 2484]]}
+  - {type: building, cells: [[658, 2456]]}
+  - {type: building, cells: [[636, 2442]]}
+  - {type: building, cells: [[631, 2317]]}
+  - {type: building, cells: [[686, 2423]]}
+  - {type: building, cells: [[643, 2394]]}
+  - {type: building, cells: [[655, 2454]]}
+  - {type: building, cells: [[718, 2430]]}
+  - {type: building, cells: [[732, 2420]]}
+  - {type: building, cells: [[729, 2425]]}
+  - {type: building, cells: [[699, 2423]]}
+  - {type: building, cells: [[681, 2326], [681, 2327]]}
+  - {type: building, cells: [[626, 2325]]}
+  - {type: building, cells: [[662, 2457]]}
+  - {type: building, cells: [[725, 2339]]}
+  - {type: building, cells: [[629, 2395]]}
+  - {type: building, cells: [[637, 2402]]}
+  - {type: building, cells: [[658, 2463]]}
+  - {type: building, cells: [[637, 2317]]}
+  - {type: building, cells: [[643, 2459]]}
+  - {type: building, cells: [[647, 2387]]}
+  - {type: building, cells: [[640, 2465]]}
+  - {type: building, cells: [[757, 2318]]}
+  - {type: building, cells: [[705, 2454]]}
+  - {type: building, cells: [[704, 2330]]}
+  - {type: building, cells: [[650, 2463]]}
+  - {type: building, cells: [[757, 2406]]}
+  - {type: building, cells: [[636, 2390]]}
+  - {type: building, cells: [[701, 2424]]}
+  - {type: building, cells: [[643, 2475]]}
+  - {type: building, cells: [[638, 2307]]}
+  - {type: building, cells: [[637, 2447]]}
+  - {type: building, cells: [[649, 2464]]}
+  - {type: building, cells: [[718, 2449]]}
+  - {type: building, cells: [[692, 2439]]}
+  - {type: building, cells: [[763, 2402]]}
+  - {type: building, cells: [[719, 2424]]}
+  - {type: building, cells: [[604, 2349]]}
+  - {type: building, cells: [[731, 2441]]}
+  - {type: building, cells: [[758, 2381]]}
+  - {type: building, cells: [[639, 2308]]}
+  - {type: building, cells: [[645, 2480]]}
+  - {type: building, cells: [[630, 2398]]}
+  - {type: building, cells: [[763, 2394]]}
+  - {type: building, cells: [[639, 2480]]}
+  - {type: building, cells: [[725, 2348], [726, 2348], [724, 2349], [725, 2349]]}
+  - {type: building, cells: [[697, 2370]]}
+  - {type: building, cells: [[633, 2308]]}
+  - {type: building, cells: [[638, 2468]]}
+  - {type: building, cells: [[674, 2330]]}
+  - {type: building, cells: [[645, 2453]]}
+  - {type: building, cells: [[653, 2377]]}
+  - {type: building, cells: [[730, 2441]]}
+  - {type: building, cells: [[659, 2487]]}
+  - {type: building, cells: [[724, 2409]]}
+  - {type: building, cells: [[708, 2413]]}
+  - {type: building, cells: [[628, 2381]]}
+  - {type: building, cells: [[738, 2458]]}
+  - {type: building, cells: [[661, 2457]]}
+  - {type: building, cells: [[723, 2340]]}
+  - {type: building, cells: [[699, 2364]]}
+  - {type: building, cells: [[741, 2445]]}
+  - {type: building, cells: [[729, 2464]]}
+  - {type: building, cells: [[632, 2397]]}
+  - {type: building, cells: [[683, 2328]]}
+  - {type: building, cells: [[648, 2392]]}
+  - {type: building, cells: [[623, 2369]]}
+  - {type: building, cells: [[632, 2432]]}
+  - {type: building, cells: [[736, 2399]]}
+  - {type: building, cells: [[704, 2412]]}
+  - {type: building, cells: [[738, 2459]]}
+  - {type: building, cells: [[657, 2454]]}
+  - {type: building, cells: [[682, 2326], [683, 2326], [683, 2327]]}
+  - {type: building, cells: [[631, 2378]]}
+  - {type: building, cells: [[646, 2390]]}
+  - {type: building, cells: [[726, 2423]]}
+  - {type: building, cells: [[632, 2313]]}
+  - {type: building, cells: [[640, 2466]]}
+  - {type: building, cells: [[757, 2319]]}
+  - {type: building, cells: [[649, 2465]]}
+  - {type: building, cells: [[651, 2469]]}
+  - {type: building, cells: [[699, 2411]]}
+  - {type: building, cells: [[663, 2464]]}
+  - {type: building, cells: [[758, 2322]]}
+  - {type: building, cells: [[747, 2421]]}
+  - {type: building, cells: [[743, 2428]]}
+  - {type: building, cells: [[693, 2419]]}
+  - {type: building, cells: [[703, 2307]]}
+  - {type: building, cells: [[725, 2431]]}
+  - {type: building, cells: [[646, 2480], [646, 2481]]}
+  - {type: building, cells: [[633, 2466]]}
+  - {type: building, cells: [[721, 2412]]}
+  - {type: building, cells: [[639, 2315]]}
+  - {type: building, cells: [[649, 2463]]}
+  - {type: building, cells: [[763, 2397]]}
+  - {type: building, cells: [[654, 2472]]}
+  - {type: building, cells: [[689, 2442]]}
+  - {type: building, cells: [[623, 2373]]}
+  - {type: building, cells: [[738, 2440]]}
+  - {type: building, cells: [[714, 2417]]}
+  - {type: building, cells: [[762, 2385]]}
+  - {type: building, cells: [[692, 2429]]}
+  - {type: building, cells: [[723, 2422]]}
+  - {type: building, cells: [[648, 2480]]}
+  - {type: building, cells: [[636, 2321]]}
+  - {type: building, cells: [[677, 2336]]}
+  - {type: building, cells: [[652, 2389]]}
+  - {type: building, cells: [[633, 2471]]}
+  - {type: building, cells: [[757, 2320]]}
+  - {type: building, cells: [[731, 2456]]}
+  - {type: building, cells: [[634, 2446]]}
+  - {type: building, cells: [[658, 2477]]}
+  - {type: building, cells: [[734, 2409]]}
+  - {type: building, cells: [[721, 2434]]}
+  - {type: building, cells: [[616, 2353]]}
+  - {type: building, cells: [[631, 2395]]}
+  - {type: building, cells: [[637, 2394]]}
+  - {type: building, cells: [[633, 2433]]}
+  - {type: building, cells: [[693, 2372]]}
+  - {type: building, cells: [[641, 2479]]}
+  - {type: building, cells: [[724, 2458]]}
+  - {type: building, cells: [[765, 2387]]}
+  - {type: building, cells: [[600, 2344]]}
+  - {type: building, cells: [[692, 2426]]}
+  - {type: building, cells: [[708, 2453]]}
+  - {type: building, cells: [[723, 2429]]}
+  - {type: building, cells: [[654, 2468]]}
+  - {type: building, cells: [[630, 2397]]}
+  - {type: building, cells: [[672, 2329]]}
+  - {type: building, cells: [[709, 2410]]}
+  - {type: building, cells: [[654, 2489]]}
+  - {type: building, cells: [[728, 2454], [726, 2455], [727, 2455]]}
+  - {type: building, cells: [[730, 2462]]}
+  - {type: building, cells: [[692, 2427]]}
+  - {type: building, cells: [[695, 2417]]}
+  - {type: building, cells: [[740, 2427]]}
+  - {type: building, cells: [[638, 2469]]}
+  - {type: building, cells: [[609, 2358]]}
+  - {type: building, cells: [[709, 2455], [710, 2455]]}
+  - {type: building, cells: [[756, 2321], [757, 2321]]}
+  - {type: building, cells: [[630, 2481]]}
+  - {type: building, cells: [[723, 2346], [724, 2346], [725, 2346], [722, 2347], [723, 2347], [724, 2347], [725, 2347]]}
+  - {type: building, cells: [[616, 2365]]}
+  - {type: building, cells: [[646, 2472]]}
+  - {type: building, cells: [[597, 2307], [595, 2308], [596, 2308]]}
+  - {type: building, cells: [[656, 2376]]}
+  - {type: building, cells: [[648, 2474]]}
+  - {type: building, cells: [[721, 2347], [721, 2348], [722, 2348]]}
+  - {type: building, cells: [[663, 2502]]}
+  - {type: building, cells: [[766, 2390]]}
+  - {type: building, cells: [[663, 2455]]}
+  - {type: building, cells: [[701, 2372]]}
+  - {type: building, cells: [[697, 2419]]}
+  - {type: building, cells: [[596, 2313]]}
+  - {type: building, cells: [[634, 2321]]}
+  - {type: building, cells: [[666, 2494]]}
+  - {type: building, cells: [[624, 2326]]}
+  - {type: building, cells: [[623, 2398]]}
+  - {type: building, cells: [[658, 2455]]}
+  - {type: building, cells: [[651, 2387], [651, 2388]]}
+  - {type: building, cells: [[626, 2364], [627, 2364], [625, 2365], [626, 2365], [625, 2366]]}
+  - {type: building, cells: [[699, 2414], [700, 2414]]}
+  - {type: building, cells: [[763, 2323]]}
+  - {type: building, cells: [[642, 2312]]}
+  - {type: building, cells: [[651, 2444]]}
+  - {type: building, cells: [[738, 2457]]}
+  - {type: building, cells: [[742, 2412]]}
+  - {type: building, cells: [[740, 2418]]}
+  - {type: building, cells: [[661, 2483]]}
+  - {type: building, cells: [[732, 2338], [732, 2339], [733, 2340]]}
+  - {type: building, cells: [[763, 2392], [764, 2392]]}
+  - {type: building, cells: [[644, 2397]]}
+  - {type: building, cells: [[631, 2325]]}
+  - {type: building, cells: [[702, 2372]]}
+  - {type: building, cells: [[665, 2453]]}
+  - {type: building, cells: [[653, 2498]]}
+  - {type: building, cells: [[691, 2438]]}
+  - {type: building, cells: [[623, 2367]]}
+  - {type: building, cells: [[739, 2421], [740, 2421]]}
+  - {type: building, cells: [[726, 2426]]}
+  - {type: building, cells: [[731, 2410]]}
+  - {type: building, cells: [[719, 2416]]}
+  - {type: building, cells: [[633, 2472]]}
+  - {type: building, cells: [[692, 2425]]}
+  - {type: building, cells: [[639, 2454]]}
+  - {type: building, cells: [[760, 2383], [761, 2383]]}
+  - {type: building, cells: [[640, 2317]]}
+  - {type: building, cells: [[664, 2457], [665, 2457]]}
+  - {type: building, cells: [[642, 2486]]}
+  - {type: building, cells: [[622, 2318], [623, 2319], [623, 2320]]}
+  - {type: building, cells: [[724, 2420], [725, 2420]]}
+  - {type: building, cells: [[628, 2400]]}
+  - {type: building, cells: [[687, 2422], [688, 2423]]}
+  - {type: building, cells: [[633, 2402]]}
+  - {type: building, cells: [[698, 2437], [699, 2437]]}
+  - {type: building, cells: [[673, 2330]]}
+  - {type: building, cells: [[727, 2418]]}
+  - {type: building, cells: [[640, 2309]]}
+  - {type: building, cells: [[608, 2361]]}
+  - {type: building, cells: [[701, 2455]]}
+  - {type: building, cells: [[650, 2470]]}
+  - {type: building, cells: [[641, 2315]]}
+  - {type: building, cells: [[728, 2427]]}
+  - {type: building, cells: [[706, 2360], [707, 2360], [705, 2361], [706, 2361], [707, 2361], [703, 2362], [704, 2362], [705, 2362], [706, 2362], [702, 2363], [703, 2363], [704, 2363], [705, 2363], [706, 2363], [701, 2364], [702, 2364], [703, 2364], [704, 2364], [702, 2365]]}
+  - {type: building, cells: [[633, 2398], [634, 2398]]}
+  - {type: building, cells: [[721, 2418]]}
+  - {type: building, cells: [[612, 2366]]}
+  - {type: building, cells: [[661, 2458]]}
+  - {type: building, cells: [[712, 2456]]}
+  - {type: building, cells: [[678, 2327], [679, 2327], [680, 2327], [676, 2328], [677, 2328], [678, 2328]]}
+  - {type: building, cells: [[717, 2432]]}
+  - {type: building, cells: [[656, 2361]]}
+  - {type: building, cells: [[632, 2471]]}
+  - {type: building, cells: [[620, 2363]]}
+  - {type: building, cells: [[760, 2320]]}
+  - {type: building, cells: [[600, 2346]]}
+  - {type: building, cells: [[626, 2382]]}
+  - {type: building, cells: [[637, 2446]]}
+  - {type: building, cells: [[663, 2456]]}
+  - {type: building, cells: [[700, 2439]]}
+  - {type: building, cells: [[642, 2388], [643, 2388]]}
+  - {type: building, cells: [[601, 2308]]}
+  - {type: building, cells: [[677, 2333], [676, 2334], [676, 2335]]}
+  - {type: building, cells: [[640, 2389]]}
+  - {type: building, cells: [[627, 2382]]}
+  - {type: building, cells: [[699, 2365]]}
+  - {type: building, cells: [[710, 2458]]}
+  - {type: building, cells: [[725, 2342]]}
+  - {type: building, cells: [[631, 2474], [632, 2474]]}
+  - {type: building, cells: [[726, 2414], [727, 2414]]}
+  - {type: building, cells: [[653, 2472]]}
+  - {type: building, cells: [[729, 2433], [729, 2434]]}
+  - {type: building, cells: [[649, 2466]]}
+  - {type: building, cells: [[721, 2432]]}
+  - {type: building, cells: [[692, 2374]]}
+  - {type: building, cells: [[697, 2435], [698, 2435]]}
+  - {type: building, cells: [[638, 2452]]}
+  - {type: building, cells: [[645, 2386]]}
+  - {type: building, cells: [[647, 2460]]}
+  - {type: building, cells: [[730, 2345]]}
+  - {type: building, cells: [[639, 2398], [639, 2399]]}
+  - {type: building, cells: [[646, 2396]]}
+  - {type: building, cells: [[738, 2463]]}
+  - {type: building, cells: [[671, 2333], [671, 2334]]}
+  - {type: building, cells: [[638, 2480]]}
+  - {type: building, cells: [[640, 2402]]}
+  - {type: building, cells: [[722, 2423]]}
+  - {type: building, cells: [[739, 2416]]}
+  - {type: building, cells: [[666, 2491], [667, 2491], [665, 2492], [664, 2493]]}
+  - {type: building, cells: [[730, 2412]]}
+  - {type: building, cells: [[662, 2321], [662, 2322], [663, 2322], [663, 2323], [664, 2323], [665, 2324], [666, 2324], [666, 2325], [667, 2325], [667, 2326], [668, 2326], [668, 2327], [669, 2327]]}
+  - {type: building, cells: [[728, 2439]]}
+  - {type: building, cells: [[643, 2398], [644, 2398]]}
+  - {type: building, cells: [[734, 2439], [734, 2440]]}
+  - {type: building, cells: [[722, 2458], [721, 2459]]}
+  - {type: building, cells: [[597, 2341], [597, 2342]]}
+  - {type: building, cells: [[654, 2463], [655, 2463]]}
+  - {type: building, cells: [[662, 2455]]}
+  - {type: building, cells: [[728, 2444]]}
+  - {type: building, cells: [[634, 2467]]}
+  - {type: building, cells: [[734, 2421]]}
+  - {type: building, cells: [[719, 2434]]}
+  - {type: building, cells: [[729, 2416]]}
+  - {type: building, cells: [[697, 2433], [698, 2433], [698, 2434]]}
+  - {type: building, cells: [[700, 2367], [699, 2368], [698, 2369]]}
+  - {type: building, cells: [[730, 2442]]}
+  - {type: building, cells: [[663, 2458]]}
+  - {type: building, cells: [[616, 2363], [615, 2364]]}
+  - {type: building, cells: [[732, 2441], [732, 2442]]}
+  - {type: building, cells: [[724, 2424]]}
+  - {type: building, cells: [[733, 2414]]}
+  - {type: building, cells: [[761, 2402]]}
+  - {type: building, cells: [[758, 2320], [758, 2321]]}
+  - {type: building, cells: [[691, 2418]]}
+  - {type: building, cells: [[638, 2475]]}
+  - {type: building, cells: [[733, 2462]]}
+  - {type: building, cells: [[724, 2434]]}
+  - {type: building, cells: [[719, 2425]]}
+  - {type: building, cells: [[702, 2417]]}
+  - {type: building, cells: [[741, 2414]]}
+  - {type: building, cells: [[716, 2423]]}
+  - {type: building, cells: [[729, 2428]]}
+  - {type: building, cells: [[733, 2354]]}
+  - {type: building, cells: [[732, 2438]]}
+  - {type: building, cells: [[708, 2414], [707, 2415], [709, 2415]]}
+  - {type: building, cells: [[654, 2471]]}
+  - {type: building, cells: [[659, 2470]]}
+  - {type: building, cells: [[656, 2471]]}
+  - {type: building, cells: [[571, 2402]]}
+  - {type: building, cells: [[636, 2404], [636, 2405]]}
+  - {type: building, cells: [[635, 2375]]}
+  - {type: building, cells: [[636, 2374]]}
+  - {type: building, cells: [[634, 2375]]}
+  - {type: building, cells: [[643, 2374]]}
+  - {type: building, cells: [[641, 2382]]}
+  - {type: building, cells: [[639, 2382]]}
+  - {type: building, cells: [[638, 2382]]}
+  - {type: building, cells: [[639, 2383]]}
+  - {type: building, cells: [[713, 2413]]}
+  - {type: building, cells: [[706, 2422], [707, 2422]]}
+  - {type: building, cells: [[703, 2422]]}
+  - {type: building, cells: [[718, 2422]]}
+  - {type: building, cells: [[719, 2420], [720, 2420]]}
+  - {type: building, cells: [[730, 2427]]}
+  - {type: building, cells: [[733, 2433]]}
+  - {type: building, cells: [[731, 2430]]}
+  - {type: building, cells: [[738, 2433]]}
+  - {type: building, cells: [[735, 2435], [736, 2436]]}
+  - {type: building, cells: [[735, 2431]]}
+  - {type: building, cells: [[644, 2475]]}
+  - {type: wall, cells: [[630, 2477]]}
+  - {type: wall, cells: [[630, 2476]]}
+  - {type: wall, cells: [[630, 2475]]}
+  - {type: wall, cells: [[630, 2474]]}
+  - {type: wall, cells: [[632, 2473]]}
+  - {type: wall, cells: [[633, 2473]]}
+  - {type: wall, cells: [[634, 2473]]}
+  - {type: wall, cells: [[634, 2474]]}
+  - {type: wall, cells: [[634, 2475]]}
+  - {type: wall, cells: [[634, 2476]]}
+  - {type: wall, cells: [[635, 2476]]}
+  - {type: tree, cells: [[631, 2477]]}
+  - {type: tree, cells: [[631, 2473]]}
+  - {type: tree, cells: [[767, 2521]]}
+  - {type: tree, cells: [[767, 2520]]}
+  - {type: tree, cells: [[634, 2477]]}
+  - {type: tree, cells: [[633, 2477]]}
+  - {type: tree, cells: [[632, 2477]]}
+  - {type: tree, cells: [[631, 2478]]}
+  - {type: tree, cells: [[630, 2478]]}
+  - {type: tree, cells: [[631, 2479]]}
+  - {type: tree, cells: [[632, 2479]]}
+constructions:
+  - {type: bridge, cells: [[622, 2484], [623, 2484], [623, 2485]]}
+links: []
+islands: []

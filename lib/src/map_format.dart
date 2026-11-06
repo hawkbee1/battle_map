@@ -1,5 +1,7 @@
+import 'dart:convert';
+
+import 'package:battle_map/src/yaml_reader.dart';
 import 'package:battle_pathfinding/battle_pathfinding.dart';
-import 'package:yaml/yaml.dart';
 
 /// The name of the map file.
 const mapFile = 'map.yaml';
@@ -10,9 +12,6 @@ const objectsFile = 'objects.yaml';
 
 /// The version of the map format this package reads and writes.
 const mapFormatVersion = 1;
-
-/// Island names: letters, digits, `_` and `-`, so they stay plain YAML.
-final _islandName = RegExp(r'^[a-z][a-z0-9_-]*$');
 
 /// {@template map_format_exception}
 /// A map file that does not follow the map format: in [file], at the
@@ -39,8 +38,8 @@ final class MapFormatException implements Exception {
 /// The map file (stack decision 5, MAP-02, MAP-03): its name, cell size,
 /// tile size, the terrain type of each index of the terrain images, the
 /// HQ starting points for each team count it supports (HQ-01) and the
-/// relics' starting cells (RELIC-02). A built map also gives its size in
-/// cells ([width], [depth]).
+/// relics' starting cells (RELIC-02), and the [attribution] its sources
+/// require. A built map also gives its size in cells ([width], [depth]).
 /// {@endtemplate}
 final class MapSpec {
   /// {@macro map_spec}
@@ -51,13 +50,14 @@ final class MapSpec {
     required this.teams,
     required this.relics,
     this.tileSize = 256,
+    this.attribution = const [],
     this.width,
     this.depth,
   });
 
   /// Reads a map file. Throws a [MapFormatException] naming the key.
   factory parse(String text, {String file = mapFile}) {
-    final root = _Node.parse(file, text);
+    final root = YamlReader.parse(file, text);
     final version = root.child('version').integer;
     if (version != mapFormatVersion) {
       root.child('version').fail('must be $mapFormatVersion');
@@ -76,6 +76,9 @@ final class MapSpec {
           ],
       },
       relics: [for (final relic in root.child('relics').items) relic.cell],
+      attribution: root.has('attribution')
+          ? root.child('attribution').strings
+          : const [],
       width: root.has('width') ? root.child('width').positive : null,
       depth: root.has('depth') ? root.child('depth').positive : null,
     );
@@ -99,26 +102,34 @@ final class MapSpec {
   /// The relics' starting cells.
   final List<CellRef> relics;
 
+  /// What the map's sources require users to be shown: their names and
+  /// licences (ODbL, Licence Ouverte), one line each.
+  final List<String> attribution;
+
   /// The map's columns; null in a source map, whose images give it.
   final int? width;
 
   /// The map's rows; null in a source map.
   final int? depth;
 
-  /// The map file of this map once built, [width] × [depth] cells.
-  String toYaml({required int width, required int depth}) {
+  /// The map file of this map: once built, of [width] × [depth] cells; as
+  /// a source map without them, its images giving its size.
+  String toYaml({int? width, int? depth}) {
     final lines = [
       'version: $mapFormatVersion',
       'name: $name',
       'cell_size_m: $cellSizeM',
       'tile_size: $tileSize',
-      'width: $width',
-      'depth: $depth',
+      if (width != null) 'width: $width',
+      if (depth != null) 'depth: $depth',
       'terrain_index: [${terrainIndex.join(', ')}]',
       if (teams.isEmpty) 'teams: {}' else 'teams:',
       for (final MapEntry(:key, :value) in teams.entries)
         '  $key: [${value.map(_cellYaml).join(', ')}]',
       'relics: [${relics.map(_cellYaml).join(', ')}]',
+      if (attribution.isNotEmpty) 'attribution:',
+      // JSON strings are YAML strings, quoted whatever they hold.
+      for (final line in attribution) '  - ${jsonEncode(line)}',
     ];
     return '${lines.join('\n')}\n';
   }
@@ -214,8 +225,8 @@ final class MapFeatures {
 
   /// Reads a features file. Throws a [MapFormatException] naming the key.
   factory parse(String text, {String file = objectsFile}) {
-    final root = _Node.parse(file, text);
-    MapFeature feature(FeatureKind kind, _Node node) => MapFeature(
+    final root = YamlReader.parse(file, text);
+    MapFeature feature(FeatureKind kind, YamlReader node) => MapFeature(
       kind: kind,
       type: node.child('type').string,
       cells: kind == FeatureKind.link
@@ -225,7 +236,7 @@ final class MapFeatures {
           ? node.child('armor_type').string
           : null,
     );
-    List<_Node> section(String key) =>
+    List<YamlReader> section(String key) =>
         root.has(key) ? root.child(key).items : const [];
     return MapFeatures(
       features: [
@@ -296,96 +307,3 @@ String _islandYaml(MapIsland island) {
 String _cellYaml(CellRef cell) => cell.surface == groundSurface
     ? '[${cell.x}, ${cell.y}]'
     : '[${cell.x}, ${cell.y}, ${cell.surface}]';
-
-/// A value of a YAML file at a dotted key, for error messages.
-final class _Node {
-  new(this.file, this.key, this.value);
-
-  factory parse(String file, String text) {
-    final Object? value;
-    try {
-      value = loadYaml(text);
-    } on YamlException catch (error) {
-      throw MapFormatException(file: file, key: '', problem: error.message);
-    }
-    return _Node(file, '', value);
-  }
-
-  final String file;
-  final String key;
-  final Object? value;
-
-  Never fail(String problem) =>
-      throw MapFormatException(file: file, key: key, problem: problem);
-
-  String _keyOf(Object name) => key.isEmpty ? '$name' : '$key.$name';
-
-  YamlMap get _map => switch (value) {
-    final YamlMap map => map,
-    _ => fail('must be a map'),
-  };
-
-  bool has(String name) => _map.containsKey(name);
-
-  _Node child(String name) => has(name)
-      ? _Node(file, _keyOf(name), _map[name])
-      : _Node(file, _keyOf(name), null).fail('is missing');
-
-  Iterable<(String, _Node)> get entries => [
-    for (final MapEntry(:Object key, :value) in _map.entries)
-      ('$key', _Node(file, _keyOf(key), value)),
-  ];
-
-  List<_Node> get items => switch (value) {
-    final YamlList list => [
-      for (final (index, item) in list.indexed)
-        _Node(file, '$key[$index]', item),
-    ],
-    _ => fail('must be a list'),
-  };
-
-  String get string => switch (value) {
-    final String text => text,
-    _ => fail('must be text'),
-  };
-
-  String get islandName =>
-      _islandName.hasMatch(string) ? string : fail('must match $_islandName');
-
-  int get integer => switch (value) {
-    final int number => number,
-    _ => fail('must be a whole number'),
-  };
-
-  int get positive => integer > 0 ? integer : fail('must be positive');
-
-  double get number => switch (value) {
-    final num number => number.toDouble(),
-    _ => fail('must be a number'),
-  };
-
-  /// `[x, y]` on the ground, `[x, y, island]` on a floating island.
-  CellRef get cell {
-    final parts = items;
-    if (parts.length != 2 && parts.length != 3) {
-      fail('must be [x, y] or [x, y, island]');
-    }
-    return CellRef(
-      parts[0].integer,
-      parts[1].integer,
-      surface: parts.length == 3 ? parts[2].islandName : groundSurface,
-    );
-  }
-
-  /// `[x, y, width, depth]`.
-  (int, int, int, int) get area {
-    final parts = items;
-    if (parts.length != 4) fail('must be [x, y, width, depth]');
-    return (
-      parts[0].integer,
-      parts[1].integer,
-      parts[2].positive,
-      parts[3].positive,
-    );
-  }
-}
