@@ -1,0 +1,16 @@
+version: 1
+name: saint_lo
+cell_size_m: 10.0
+tile_size: 256
+width: 1000
+depth: 5000
+terrain_index: [grass, forest_floor, sand, mud, rock, road, town_street, mountain, river, lake]
+teams:
+  2: [[499, 149], [500, 4850]]
+  3: [[499, 149], [500, 2500], [500, 4850]]
+  4: [[499, 149], [500, 1700], [500, 3300], [500, 4850]]
+  5: [[499, 149], [500, 1300], [500, 2500], [500, 3700], [500, 4850]]
+relics: [[300, 700], [700, 1250], [475, 1830], [300, 2350], [700, 2650], [297, 3147], [700, 3750], [300, 4300]]
+attribution:
+  - "Terrain, water, roads, buildings and trees: © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright), data of 2026-11-05T21:12:51Z."
+  - "Heights: IGN, RGE ALTI®, Licence Ouverte 2.0 (https://www.etalab.gouv.fr/licence-ouverte-open-licence), fetched 2026-11-05."

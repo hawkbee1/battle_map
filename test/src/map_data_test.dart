@@ -146,5 +146,23 @@ void main() {
         throwsFormatIn('tiles/0_0/heights.png', 'must be 4 × 4'),
       );
     });
+
+    test('stack decision 5 writes a source map that reads back the same, to '
+        'correct a built map by hand', () {
+      final map = MapData.fromBuilt(valley().toBuilt());
+      final files = map.toSource();
+      final again = MapData.fromSource(
+        mapYaml: files.mapYaml,
+        heightsPng: files.heightsPng,
+        terrainPng: files.terrainPng,
+        objectsYaml: files.objectsYaml,
+      );
+
+      expect(files.mapYaml, isNot(contains('width')));
+      expect((again.width, again.depth), (12, 8));
+      expect(again.heights, map.heights);
+      expect(again.terrain, map.terrain);
+      expect(again.features.toYaml(), map.features.toYaml());
+    });
   });
 }
