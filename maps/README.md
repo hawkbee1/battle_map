@@ -58,3 +58,11 @@ Corrections by hand:
 - `bridge@(499, 256)` made a `reinforced_bridge`: without it, the north HQ's land (east
   of the Vire, north of row 637) was linked to the rest only by bridges a relic or the
   HQ cannot cross.
+
+## saint_lo_1km
+
+1 × 1 km of the Vire valley's bocage inside `saint_lo` (its cells 600 to 699 across and
+2,850 to 2,949 down; Lambert-93 403–404 km E, 6,887.5–6,888.5 km N), for playtests: a
+stream with two bridges, roads, hedgerows and woods, 81 m of relief. OpenStreetMap data and
+heights fetched on 2026-11-08. HQs north and south for two teams; five relics, the
+`relics_to_hold` of `battle.yaml`. Built from its import file with no correction by hand.

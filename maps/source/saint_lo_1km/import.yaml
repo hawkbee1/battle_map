@@ -1,0 +1,55 @@
+# Import file of the map saint_lo_1km (stack decision 5, authoring step 1):
+# 1 × 1 km of the Vire valley's bocage inside saint_lo, cells 600 to 699
+# across and 2,850 to 2,949 down, for playtests.
+#   dart run battle_map:fetch_map_sources <this file> <downloads>
+#   dart run battle_map:import_map <plan> <this file> <downloads> <source>
+#   dart run battle_map:build_map <plan> <source> <built>
+version: 1
+name: saint_lo_1km
+elevation: ign_rge_alti
+# North-west corner, in Lambert-93 metres (EPSG:2154).
+origin: [403000, 6888500]
+width: 100
+depth: 100
+cell_size_m: 10
+tile_size: 256
+terrain_index: [grass, forest_floor, sand, mud, rock, road, town_street, mountain, river, lake]
+ground: grass
+
+# Painted in order, a later rule over an earlier one; land never covers water.
+# An element takes the first rule it passes. Each key of tags must match.
+areas:
+  - {tags: {landuse: forest}, terrain: forest_floor}
+  - {tags: {natural: wood}, terrain: forest_floor}
+  - {tags: {landuse: [residential, commercial, retail, industrial, garages, construction, railway]}, terrain: town_street}
+  - {tags: {natural: [sand, beach]}, terrain: sand}
+  - {tags: {natural: wetland}, terrain: mud}
+  - {tags: {landuse: quarry}, terrain: rock}
+  - {tags: {natural: [bare_rock, scree]}, terrain: rock}
+  - {tags: {natural: water, water: [river, canal, oxbow]}, terrain: river}
+  - {tags: {natural: water}, terrain: lake}
+  - {tags: {landuse: [reservoir, basin]}, terrain: lake}
+
+lines:
+  - {tags: {waterway: [river, canal]}, terrain: river, width_m: 20}
+  - {tags: {natural: cliff}, terrain: mountain, width_m: 10}
+  - {tags: {highway: [motorway, motorway_link, trunk, trunk_link]}, terrain: road, width_m: 20, bridge: reinforced_bridge}
+  - {tags: {highway: [primary, primary_link, secondary, secondary_link]}, terrain: road, width_m: 10, bridge: reinforced_bridge}
+  - {tags: {highway: [tertiary, tertiary_link, unclassified, residential, living_street, pedestrian, road, track]}, terrain: road, width_m: 10, bridge: bridge}
+
+# Placed in order, never on water, on a cell another object holds or on a
+# starting point.
+objects:
+  - {tags: {building: '*'}, type: building, shape: area, not_on: [road]}
+  - {tags: {barrier: [wall, city_wall]}, type: wall, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {natural: tree}, type: tree, shape: point, not_on: [road]}
+  - {tags: {natural: tree_row}, type: tree, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {barrier: hedge}, type: tree, shape: line, each_cell: true, not_on: [road]}
+  - {tags: {landuse: forest}, type: tree, shape: area, each_cell: true}
+  - {tags: {natural: wood}, type: tree, shape: area, each_cell: true}
+
+# Starting points, placed by hand (authoring step 3) on open grass or road.
+# HQs at the two ends; five relics, relics_to_hold of battle.yaml (RELIC-17).
+teams:
+  2: [[50, 5], [50, 94]]
+relics: [[20, 30], [80, 30], [50, 50], [20, 70], [80, 70]]

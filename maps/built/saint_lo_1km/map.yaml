@@ -1,0 +1,13 @@
+version: 1
+name: saint_lo_1km
+cell_size_m: 10.0
+tile_size: 256
+width: 100
+depth: 100
+terrain_index: [grass, forest_floor, sand, mud, rock, road, town_street, mountain, river, lake]
+teams:
+  2: [[50, 5], [50, 94]]
+relics: [[20, 30], [80, 30], [50, 50], [20, 70], [80, 70]]
+attribution:
+  - "Terrain, water, roads, buildings and trees: © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright), data of 2026-11-08T18:46:19Z."
+  - "Heights: IGN, RGE ALTI®, Licence Ouverte 2.0 (https://www.etalab.gouv.fr/licence-ouverte-open-licence), fetched 2026-11-08."
